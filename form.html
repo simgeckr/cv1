@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <!-- <button>Formun dışında</button> -->
+    <form action="/dürüm">
+      <!-- <button type="button">Lütfen formu gönderme</button> -->
+      <label for="kullanıcıadı">Kullanıcı Adı Giriniz:</label>
+      <input type="text" placeholder="Kullanıcı Adı" id="kullanıcıadı" />
+      <input type="password" placeholder="Şifre" />
+      <button>Gönder</button>
+      <!-- <input type="color"> -->
+      <!-- <input type="number"> -->
+      <!-- <button>Submit</button> -->
+      <input type="submit" value="gönder" />
+    </form>
+    <hr />
+    <form action="https://www.reddit.com/search/?q=dog">
+      <input type="text" name="q" />
+      <button>redditte ara</button>
+      <hr />
+    </form>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>googlede ara</button>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>youtubede ara</button>
+    </form>
+    <h2>Daha fazla input</h2>
+    <form action="/birds">
+      <input type="checkbox" name="tos" id="kabul" checked />
+      <label for="kabul">Kabul ediyorum</label>
+      <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="boyut" id="xs" value="xs" />
+        <label for="s">S:</label>
+        <input type="radio" name="boyut" id="s" value="s" />
+        <label for="m">M:</label>
+        <input type="radio" name="boyut" id="m" value="m" />
+      </p>
+      <p>
+        <label for="hayvan">favori hayvanlarınızı seçiniz</label>
+        <select name="hayvan" id="hayvan">
+          <option value="">Birini seçiniz</option>
+          <option value="balık">balık</option>
+          <option value="kedi">kedi</option>
+          <option value="kuş">kuş</option>
+        </select>
+      </p>
+      <p>
+        <label for="peynir">peynir miktarı</label>
+        <input
+          type="range"
+          name="peynir miktarı"
+          min="1"
+          max="10"
+          id="peynir"
+          step="7"
+        />
+      </p>
+      <p>
+        <label for="istek">özel istek</label><br />
+        <textarea
+          name="istek"
+          id="istek"
+          cols="40"
+          rows="10"
+          placeholder="Buraya bir şeyler yazın"
+        ></textarea>
+      </p>
+
+      <h2>Validations</h2>
+      <button>yolla</button>
+      <hr />
+    </form>
+    <form action="/yedek">
+      <label for="ilk">isim giriniz</label>
+      <input type="text" name="ilk" id="ilk" required />
+      <p>
+        <label for="kullanıcıadı">kullanıcı adı</label>
+        <input
+          type="text"
+          id="kullanıcıadı"
+          name="kullanıcıadı"
+          minlength="5"
+          maxlength="15"
+          required
+        />
+      </p>
+      <h2>Url doğrulama</h2>
+      <p><input type="url" /></p>
+      <button>submit</button>
+    </form>
+
+
+    <h2>Race Registration</h2>
+    <form action="">
+<p>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" required>
+    
+    
+        <label for="lastname">Last Name</label>
+        <input type="text" name="" id="lastname" required>
+    </p>
+    <p>
+        <h4>Select a Race:</h4>
+        <input type="radio" name="boyut" id="funrun5k">
+        <label for="funrun5k">Fun Run 5k</label>
+     
+    </p>
+
+    <p>
+
+        <input type="radio" name="boyut" id="halfmarathon">
+        <label for="halfmarathon">Half Marathon</label>
+    </p>
+
+    <p>
+
+        <input type="radio" name="boyut" id="fullmarathon">
+        <label for="fullmarathon">Full Marathon</label>
+    </p>
+
+<p>
+
+    <label for="email">Email</label>
+    <input type="text" name="" id="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" name="" id="password" required>
+
+</p>
+
+<p>
+
+    <label for="yaş">Select Age Group</label>
+    <select name="yaş" id="yaş">
+      <option value="">Under 18</option>
+      <option value="18-30">18-30</option>
+      <option value="30-50">30-50</option>
+      <option value="50+">50+</option>
+    </select>    
+</p>
+
+<button>Register</button>
+    </form>
+
+
+  </body>
+</html>
